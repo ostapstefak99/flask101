@@ -4,6 +4,21 @@
 ##################################################################
 
 
+def weighted_average(number_weight_list):
+	output = 0
+	if len(number_weight_list) == 0:
+		return 0
+	elif len(number_weight_list) % 2 != 0:
+		raise "list is not of an even length"
+	else:
+		for i in range(0, (len(number_weight_list)-1), 2):
+			print (number_weight_list[i])
+			output += (number_weight_list[i] * number_weight_list[i+1])
+
+	return output
+			
+		
+
 
 def mean(number_list):
 	size = len(number_list)
