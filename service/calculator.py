@@ -12,7 +12,6 @@ def weighted_average(number_weight_list):
 		raise "list is not of an even length"
 	else:
 		for i in range(0, (len(number_weight_list)-1), 2):
-			print (number_weight_list[i])
 			output += (number_weight_list[i] * number_weight_list[i+1])
 
 	return output
